@@ -1,0 +1,24 @@
+*** MUST BE IN INF-102/Week-5 DIRECTORY ***
+COMPILE:
+    g++ -std=c++11 -o fourteen fourteen.cpp
+    g++ -std=c++11 -o fifteen fifteen.cpp
+    
+RUN:
+    ./fourteen "../pride-and-prejudice.txt"
+    ./fifteen "../pride-and-prejudice.txt"
+    python3.7 twentythree.py "../pride-and-prejudice.txt"
+    
+    
+MYPY:
+    I could not figure out how to run mypy with my python file, although
+    I did manage to download it into ~/home/user/.local/lib/python3.5/site-packages/mypy directory.
+    When I run "mypy twentythree.py "../pride-and-prejudice.txt"" I get a "mypy: command not found".
+    
+    I cannot change or add PATH/env variables using the dockerimage stack that I initiallized this workspace with from the dashboard's
+    env variables tab in the workspace configuration.
+    
+    Instead I used this website: https://mypy-play.net/
+    I copy/pasted my code, used flags that disallowed most "Any" generic types (except --isallow-any-expr), and it succeeded.
+    
+
+    
