@@ -15,10 +15,37 @@ MYPY:
     When I run "mypy twentythree.py "../pride-and-prejudice.txt"" I get a "mypy: command not found".
     
     I cannot change or add PATH/env variables using the dockerimage stack that I initiallized this workspace with from the dashboard's
-    env variables tab in the workspace configuration.
+    env variables tab in the workspace configuration. [EDIT 4/14/2020 - This was using Codenvy.io environment]
     
     Instead I used this website: https://mypy-play.net/
     I copy/pasted my code, used flags that disallowed most "Any" generic types (except --isallow-any-expr), and it succeeded.
     
+ABOUT:
+fourteen.cpp - Hollywood
+    Constraints:
+        1. Larger problem is decomposed into entities using some form of abstraction (objects, modules or similar).
+        2. The entities are never called on directly for actions.
+        3. The entities provide interfaces for other entities to be able to register callbacks.
+        4. At certain points of the computation, the entities call on the other entities that have registered for callbacks.
+    Additional features:
+        1.  Changed the program so that it implements an additional task: after printing out the list of 25 top words, it should
+            print out the number of non-stop words with the letter z. Additional constraints: (i) no changes should be made to the existing classes; adding
+            new classes and more lines of code to the main function is allowed; (ii) files should be read only once for both term-frequency and “words with
+            z” tasks.
 
-    
+fifteen.cpp - Bulletin Board
+    Constraints:
+        1. Larger problem is decomposed into entities using some form of abstraction (objects, modules or similar).
+        2. The entities are never called on directly for actions.
+        3. Existence of an infrastructure for publishing and subscribing to events, aka the bulletin board.
+        4. Entities post event subscriptions (aka “wanted”) to the bulletin board and publish events (aka “offered”) to the bulletin board. The bulletin
+           board infrastructure does all the event management and distribution.
+    Additional features:
+        1.  Changed the program so that it implements an additional task: after printing out the list of 25 top words, it should
+            print out the number of non-stop words with the letter z. Additional constraints: (i) no changes should be made to the existing classes; adding
+            new classes and more lines of code to the main function is allowed; (ii) files should be read only once for both term-frequency and “words with
+            z” tasks.
+            
+ twentythree.py - Declared Intentions
+    Mechanism for performing static type checking. Function annotations.
+        
