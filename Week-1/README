@@ -9,3 +9,9 @@ RUN:
     
 
 ***FIXED PERFORMANCE ERRORS IN FILE project1_fixed.cpp
+
+ABOUT:
+project1_fixed.cpp - Initial
+    Constraints:
+        1. Find the term frequency in the text file using the given stop words.
+        2. Using any custom style.
