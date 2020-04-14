@@ -7,4 +7,15 @@ RUN:
     ./eleven "../pride-and-prejudice.txt"
     ./twelve "../pride-and-prejudice.txt"
 
-    
+ABOUT:
+eleven.cpp - Letterbox
+    Constraints:
+        1. The larger problem is decomposed into things that make sense for the problem domain.
+        2. Each thing is a capsule of data that exposes one single procedure, namely the ability to receive and dispatch messages that are sent to it.
+        3. Message dispatch can result in sending the message to another capsule.
+
+twelve.cpp - Closed Maps
+    Constraints:
+        1. The larger problem is decomposed into things that make sense for the problem domain.
+        2. Each thing is a map from keys to values. Some values are procedures/functions.
+        3. The procedures/functions close on the map itself by referring to its slots.
