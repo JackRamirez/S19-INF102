@@ -1,0 +1,18 @@
+*** MUST BE IN INF-102/Week-6 DIRECTORY ***
+COMPILE:
+    javac seventeen.java
+    javac nineteen.java
+
+    
+RUN:
+    java seventeen "../pride-and-prejudice.txt"
+    java nineteen "../pride-and-prejudice.txt"
+
+
+ABOUT:
+    I used a couple of third-party java resources for dealing with .jar files:
+        1) JarResources.java
+        2) MultiClassLoader.java
+        3) JarClassLoader.class
+    I do not take any credit for their creation and/or function.
+    Each file should be properly cited.
