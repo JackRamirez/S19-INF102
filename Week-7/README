@@ -1,0 +1,17 @@
+*** MUST BE IN INF-102/Week-7 DIRECTORY ***
+COMPILE:
+    javac twentyfive.java
+    g++ -std=c++14 -o twentysix twentysix.cpp
+
+    
+RUN:
+    java -classpath ".:sqlite-jdbc-3.27.2.1.jar" twentyfive "../pride-and-prejudice.txt"
+    ./twentysix "../pride-and-prejudice.txt"
+
+
+TO CREATE SQL DATABASE (twentyfive.java)
+    DELETE "database.db"
+    RE-COMPILE twentyfive.java
+    RE-RUN twentyfive.java
+    WAIT approx. 10 minutes
+    "database.db" should re-appear and RE-RUN should produce the same results    
