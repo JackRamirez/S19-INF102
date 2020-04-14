@@ -1,0 +1,9 @@
+*** MUST BE IN INF-102/Week-3 DIRECTORY ***
+COMPILE:
+    g++ -std=c++11 -o eight eight.cpp
+    javac nine.java
+    
+RUN:
+    ./eight "../pride-and-prejudice.txt"
+    java nine "../pride-and-prejudice.txt"
+    
