@@ -9,9 +9,26 @@ RUN:
     ./twentysix "../pride-and-prejudice.txt"
 
 
-TO CREATE SQL DATABASE (twentyfive.java)
+TO CREATE SQL DATABASE (twentyfive.java):
     DELETE "database.db"
     RE-COMPILE twentyfive.java
     RE-RUN twentyfive.java
     WAIT approx. 10 minutes
     "database.db" should re-appear and RE-RUN should produce the same results    
+    
+ABOUT:
+twentyfive.java - Persistent Tables
+    Constraints:
+        1. The data exists beyond the execution of programs that use it, and is meant to be used by many different programs.
+        2. The data is stored in a way that makes it easier/faster to explore. For example:
+            a. The input data of the problem is modeled as one or more series of domains, or types, of data.
+            b. The concrete data is modeled as having components of several domains, establishing relationships between the application’s data
+               and the domains identified.
+        3. The problem is solved by issuing queries over the data.
+ 
+ twentysix.cpp - Spreadsheet
+    Constraints:
+        1. The problem is modeled like a spreadsheet, with columns of data and formulas.
+        2. Some data depends on other data according to formulas. When data changes, the dependent data also changes automatically.
+
+        
