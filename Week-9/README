@@ -1,0 +1,17 @@
+*** MUST BE IN INF-102/Week-9 DIRECTORY ***
+COMPILE:
+    javac twentynine.java
+    javac thirtyone.java
+
+    
+RUN:
+    java twentynine "../pride-and-prejudice.txt"
+    java thirtyone "../pride-and-prejudice.txt"
+
+
+NOTE:
+    I used a third-party Generator.java file in order to implement 
+    "yield" functionality for Java.
+        1) Generator.java + all accompanying files
+    I do not take any credit for their creation and/or function.
+    Each file should be properly cited.    
