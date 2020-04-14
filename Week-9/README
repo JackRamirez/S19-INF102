@@ -15,3 +15,18 @@ NOTE:
         1) Generator.java + all accompanying files
     I do not take any credit for their creation and/or function.
     Each file should be properly cited.    
+    
+ABOUT:
+twentynine.java - Dataspaces
+    Constraints:
+        1. Existence of one or more units that execute concurrently.
+        2. Existence of one or more data spaces where concurrent units store and retrieve data.
+        3. No direct data exchanges between the concurrent units, other than via the data spaces.
+
+thirtyone.java - Double Map Reduce
+    Constraints:
+        1. Input data is divided in blocks.
+        2. A map function applies a given worker function to each block of data, potentially in parallel.
+        3. The results of the many worker functions are reshuffled.
+        4. The reshuffled blocks of data are given as input to a second map function that takes a reducible function as input.
+        5. Optional step: a reduce function takes the results of the many worker functions and recombines them into a coherent output.
