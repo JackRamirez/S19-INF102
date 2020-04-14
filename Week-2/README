@@ -6,4 +6,15 @@ COMPILE:
 RUN:
     ./five "../pride-and-prejudice.txt"
     ./six "../pride-and-prejudice.txt"
-    
+   
+ABOUT:
+five.cpp - Pipeline
+    Constraints:
+        1. Larger problem is decomposed using functionl abstraction. Functions take input, and produce output.
+        2. No shared state between functions.
+        3. The larger problem is solved by composing functions one after the other, in pipeline, as a faithful reproduction of mathematical function composition f ◦ g.
+
+ six.cpp - Code golf (brevity)
+    Constraints:
+        1. As few lines of code as possible.
+              
