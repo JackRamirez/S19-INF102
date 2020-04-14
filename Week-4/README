@@ -1,0 +1,10 @@
+*** MUST BE IN INF-102/Week-4 DIRECTORY ***
+COMPILE:
+    g++ -std=c++11 -o eleven eleven.cpp
+    g++ -std=c++11 -o twelve twelve.cpp (may take a long time)
+    
+RUN:
+    ./eleven "../pride-and-prejudice.txt"
+    ./twelve "../pride-and-prejudice.txt"
+
+    
