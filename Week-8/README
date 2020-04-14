@@ -1,0 +1,20 @@
+*** MUST BE IN INF-102/Week-8 DIRECTORY ***
+COMPILE:
+    mcs -out:twentyseven.exe twentyseven.cs
+    javac twentyeight.java
+
+    
+RUN:
+    mono twentyseven.exe "../pride-and-prejudice.txt"
+    java twentyeight "../pride-and-prejudice.txt"
+
+
+NOTE:
+    The twentyeight.java program runs quickly, 
+    but due to concurrency issues and multithreading,
+    it may be necessary to quit program and re-run it (^C to quit) if
+    the program hangs and solution is not immediate.
+    
+    
+
+    
